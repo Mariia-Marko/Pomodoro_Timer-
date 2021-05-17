@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Roboto+Slab:wght@700&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sourse/components/style.css">
+    <title>Pomodoro</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">pomodoro</h1>
+        <ul class="list">
+            <li><button class="btn" id="button">pomodoro</button></li>
+            <li><button class="btn" id="butto">short break</button></li>
+            <li><button class="btn" id="butt">long break</button></li>
+        </ul>
+        <div class="timer">
+            <ul class="timer-inner">
+                <li><div class="timer-time">00:00</div></li>
+                <li><span class="timer-state">PAUSE</span></li>
+            </ul>
+        </div>
+        <button class="settings" id="myBtn"></button>
+        <div class="modal" id="myModal">
+            <div class="modal-head">
+                <p class="modal-title">Settings</p>
+                <span class="close">&times;</span>                    
+            </div>
+            <ul class="modal-list">
+                <li class="modal-item">
+                    <p class="item-title">TIME (MINUTES)</p>
+                    <ul class="time-list">
+                        <li class="time-item">
+                            <span class="item-subtitle">pomodoro</span>
+                            <input class="choice-fonts" type="text">
+                        </li>
+                        <li class="time-item">
+                            <span class="item-subtitle">short break</span>
+                            <input class="choice-fonts" type="text">
+                        </li>
+                        <li class="time-item">
+                            <span class="item-subtitle">long break</span>
+                            <input  class="choice-fonts margin-not" type="text">
+                        </li>
+                    </ul>
+                </li>
+                <li class="modal-item">
+                    <p class="item-title">FONT</p>
+                    <div class="choice-fonts">
+                        <button class="choice-fonts__btn">Aa</button>
+                        <button class="choice-fonts__btn">Aa</button>
+                        <button class="choice-fonts__btn">Aa</button>
+                    </div>
+                </li>
+                <li class="modal-item">
+                    <p class="item-title">COLOR</p>
+                    <div class="choice-color">
+                        <input class="choice-color__btn"></input>
+                        <input class="choice-color__btn"></input>
+                        <input class="choice-color__btn"></input>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="modal-aplly">Apply</button>
+    </div>
+    <script src="./sourse/script.js"></script>
+</body>
+</html>
